@@ -1,0 +1,5 @@
+MAIN: 2020/09/21 21:38:30 goquery_example.go:116: Start
+MAIN: 2020/09/21 21:38:31 goquery_example.goMAIN: 2020/09/21 23:29:14 goquery_example.go:123: Start
+MAIN: 2020/09/21 23:29:14 goquery_example.go:126: Elapsed 101ms 
+MAIN: 2020/09/21 23:29:15 goquery_example.go:61: Resp &http.Response{Status:"200 OK", StatusCode:200, Proto:"HTTP/1.0", ProtoMajor:1, ProtoMinor:0, Header:http.Header{"Date":[]string{"Mon, 21 Sep 2020 18:29:16 GMT"}, "Server":[]string{"BaseHTTP/0.3 Python/2.7"}}, Body:(*http.bodyEOFSignal)(0xc000028080), ContentLength:-1, TransferEncoding:[]string(nil), Close:true, Uncompressed:false, Trailer:http.Header(nil), Request:(*http.Request)(0xc00019c100), TLS:(*tls.ConnectionState)(nil)}  
+MAIN: 2020/09/21 23:29:15 goquery_example.go:129: Stop

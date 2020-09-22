@@ -1,24 +1,49 @@
-00:15:12 goquery_example.go:162: Stop
-MAIN: 2020/09/22 00:15:12 goquery_example.go:156: Start
-MAIN: 2020/09/22 00:15:12 goquery_example.go:159: Elapsed 106ms 
-MAIN: 2020/09/22 00:15:12 goquery_example.go:94: Resp &http.Response{Status:"200 OK", StatusCode:200, Proto:"HTTP/1.0", ProtoMajor:1, ProtoMinor:0, Header:http.Header{"Date":[]string{"Mon, 21 Sep 2020 19:15:14 GMT"}, "Server":[]string{"BaseHTTP/0.3 Python/2.7"}}, Body:(*http.bodyEOFSignal)(0xc0001cc040), ContentLength:-1, TransferEncoding:[]string(nil), Close:true, Uncompressed:false, Trailer:http.Header(nil), Request:(*http.Request)(0xc0001c0100), TLS:(*tls.ConnectionState)(nil)}  
-MAIN: 2020/09/22 00:15:12 goquery_example.go:162: Stop
-MAIN: 2020/09/22 00:15:13 goquery_example.go:156: Start
-MAIN: 2020/09/22 00:15:13 goquery_example.go:159: Elapsed 107ms 
-MAIN: 2020/09/22 00:15:13 goquery_example.go:94: Resp &http.Response{Status:"200 OK", StatusCode:200, Proto:"HTTP/1.0", ProtoMajor:1, ProtoMinor:0, Header:http.Header{"Date":[]string{"Mon, 21 Sep 2020 19:15:14 GMT"}, "Server":[]string{"BaseHTTP/0.3 Python/2.7"}}, Body:(*http.bodyEOFSignal)(0xc000028100), ContentLength:-1, TransferEncoding:[]string(nil), Close:true, Uncompressed:false, Trailer:http.Header(nil), Request:(*http.Request)(0xc000240100), TLS:(*tls.ConnectionState)(nil)}  
-MAIN: 2020/09/22 00:15:13 goquery_example.go:162: Stop
-MAIN: 2020/09/22 00:15:13 goquery_example.go:156: Start
-MAIN: 2020/09/22 00:15:13 goquery_example.go:159: Elapsed 107ms 
-MAIN: 2020/09/22 00:15:13 goquery_example.go:94: Resp &http.Response{Status:"200 OK", StatusCode:200, Proto:"HTTP/1.0", ProtoMajor:1, ProtoMinor:0, Header:http.Header{"Date":[]string{"Mon, 21 Sep 2020 19:15:15 GMT"}, "Server":[]string{"BaseHTTP/0.3 Python/2.7"}}, Body:(*http.bodyEOFSignal)(0xc0002ce680), ContentLength:-1, TransferEncoding:[]string(nil), Close:true, Uncompressed:false, Trailer:http.Header(nil), Request:(*http.Request)(0xc00007c100), TLS:(*tls.ConnectionState)(nil)}  
-MAIN: 2020/09/22 00:15:13 goquery_example.go:162: Stop
-MAIN: 2020/09/22 00:15:14 goquery_example.go:156: Start
-MAIN: 2020/09/22 00:15:14 goquery_example.go:159: Elapsed 103ms 
-MAIN: 2020/09/22 00:15:14 goquery_example.go:94: Resp &http.Response{Status:"200 OK", StatusCode:200, Proto:"HTTP/1.0", ProtoMajor:1, ProtoMinor:0, Header:http.Header{"Date":[]string{"Mon, 21 Sep 2020 19:15:15 GMT"}, "Server":[]string{"BaseHTTP/0.3 Python/2.7"}}, Body:(*http.bodyEOFSignal)(0xc000028080), ContentLength:-1, TransferEncoding:[]string(nil), Close:true, Uncompressed:false, Trailer:http.Header(nil), Request:(*http.Request)(0xc000196100), TLS:(*tls.ConnectionState)(nil)}  
-MAIN: 2020/09/22 00:15:14 goquery_example.go:162: Stop
-MAIN: 2020/09/22 00:15:14 goquery_example.go:156: Start
-MAIN: 2020/09/22 00:15:14 goquery_example.go:159: Elapsed 103ms 
-MAIN: 2020/09/22 00:15:14 goquery_example.go:94: Resp &http.Response{Status:"200 OK", StatusCode:200, Proto:"HTTP/1.0", ProtoMajor:1, ProtoMinor:0, Header:http.Header{"Date":[]string{"Mon, 21 Sep 2020 19:15:16 GMT"}, "Server":[]string{"BaseHTTP/0.3 Python/2.7"}}, Body:(*http.bodyEOFSignal)(0xc000028080), ContentLength:-1, TransferEncoding:[]string(nil), Close:true, Uncompressed:false, Trailer:http.Header(nil), Request:(*http.Request)(0xc000554000), TLS:(*tls.ConnectionState)(nil)}  
-MAIN: 2020/09/22 00:15:14 goquery_example.go:162: Stop
-MAIN: 2020/09/22 01:38:30 goquery_example.go:157: Start
-MAIN: 2020/09/22 01:38:30 goquery_example.go:160: Elapsed 118ms 
-MAIN: 2020/09/22 01:39:00 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: i/o timeout
+16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:31 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:31 goquery_example.go:160: Elapsed 156ms 
+MAIN: 2020/09/22 10:45:31 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:31 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:31 goquery_example.go:160: Elapsed 126ms 
+MAIN: 2020/09/22 10:45:31 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:31 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:32 goquery_example.go:160: Elapsed 145ms 
+MAIN: 2020/09/22 10:45:32 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:32 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:32 goquery_example.go:160: Elapsed 129ms 
+MAIN: 2020/09/22 10:45:32 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:32 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:32 goquery_example.go:160: Elapsed 324ms 
+MAIN: 2020/09/22 10:45:32 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:32 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:32 goquery_example.go:160: Elapsed 142ms 
+MAIN: 2020/09/22 10:45:33 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:33 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:33 goquery_example.go:160: Elapsed 122ms 
+MAIN: 2020/09/22 10:45:35 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:35 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:36 goquery_example.go:160: Elapsed 1135ms 
+MAIN: 2020/09/22 10:45:36 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:36 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:36 goquery_example.go:160: Elapsed 146ms 
+MAIN: 2020/09/22 10:45:36 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:37 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:37 goquery_example.go:160: Elapsed 164ms 
+MAIN: 2020/09/22 10:45:37 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:38 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:38 goquery_example.go:160: Elapsed 361ms 
+MAIN: 2020/09/22 10:45:38 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:38 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:38 goquery_example.go:160: Elapsed 158ms 
+MAIN: 2020/09/22 10:45:39 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:39 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:40 goquery_example.go:160: Elapsed 139ms 
+MAIN: 2020/09/22 10:45:40 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:40 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:40 goquery_example.go:160: Elapsed 130ms 
+MAIN: 2020/09/22 10:45:41 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:41 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:41 goquery_example.go:160: Elapsed 354ms 
+MAIN: 2020/09/22 10:45:42 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+MAIN: 2020/09/22 10:45:42 goquery_example.go:157: Start
+MAIN: 2020/09/22 10:45:42 goquery_example.go:160: Elapsed 125ms 
+MAIN: 2020/09/22 10:45:43 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host

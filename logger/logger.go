@@ -107,7 +107,7 @@ func init() {
 }
 
 func ReturnLogger(nameLogger string) *log.Logger {
-	logger := log.New(file, "MAIN: ", log.Ldate|log.Ltime|log.Lshortfile)
+	logger := log.New(file, nameLogger+": ", log.Ldate|log.Ltime|log.Lshortfile)
 	logger.SetOutput(file)
 	return logger
 }

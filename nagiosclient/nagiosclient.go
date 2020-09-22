@@ -1,12 +1,21 @@
 package nagiosclient
 
 import (
+	"log"
 	"net/http"
 	"net/url"
 	"strings"
+	"time"
+
+	"github.com/tttest25/gonagiosmetric/logger"
 )
 
-func sendToNagios(str string) {
+var (
+	// Logger variable for logging
+	l *log.Logger
+)
+
+func SendToNagios(str string) {
 	form := url.Values{
 		"perfdata": {"fed-serv;check_MISOJ_reception;0;OK - " + str},
 	}
@@ -16,14 +25,21 @@ func sendToNagios(str string) {
 
 	req, err := http.NewRequest("POST", "http://10.59.20.16:8000", strings.NewReader(form.Encode()))
 	if err != nil {
-		Logger.Fatal(err)
+		l.Fatal(err)
 	}
 	req.SetBasicAuth("fed_monitor", "l3tm31n")
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	cli := &http.Client{}
+	cli := &http.Client{
+		Timeout: 1 * time.Second,
+	}
 	resp, err := cli.Do(req)
 	if err != nil {
-		Logger.Fatal(err)
+		l.Fatal(err)
 	}
-	Logger.Printf("Resp %#v  \n", resp)
+	l.Printf("Resp %#v  \n", resp)
+}
+
+func init() {
+	l = logger.ReturnLogger("nagios")
+
 }

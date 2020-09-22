@@ -55,3 +55,139 @@ logger: 2020/09/22 12:58:19 logger.go:106: Start
 MAIN: 2020/09/22 12:58:19 main.go:17: Start
 MAIN: 2020/09/22 12:58:19 main.go:20: Elapsed 0ms 
 MAIN: 2020/09/22 12:58:19 main.go:23: Stop
+logger: 2020/09/22 19:37:55 logger.go:106: Start
+MAIN: 2020/09/22 19:37:55 main.go:17: Start
+MAIN: 2020/09/22 19:37:55 main.go:20: Elapsed 0ms 
+MAIN: 2020/09/22 19:37:55 main.go:23: Stop
+logger: 2020/09/22 19:37:57 logger.go:106: Start
+MAIN: 2020/09/22 19:37:57 main.go:17: Start
+MAIN: 2020/09/22 19:37:57 main.go:20: Elapsed 0ms 
+MAIN: 2020/09/22 19:37:57 main.go:23: Stop
+logger: 2020/09/22 19:37:58 logger.go:106: Start
+MAIN: 2020/09/22 19:37:58 main.go:17: Start
+MAIN: 2020/09/22 19:37:58 main.go:20: Elapsed 0ms 
+MAIN: 2020/09/22 19:37:58 main.go:23: Stop
+logger: 2020/09/22 19:52:36 logger.go:106: Start
+MAIN: 2020/09/22 19:52:36 main.go:18: Start 
+MAIN: 2020/09/22 19:52:36 main.go:19: Review 0: MODx DB 0.0014 s - Queries 7 - App 0.0235 s - Total 0.0249 s
+MAIN: 2020/09/22 19:52:36 main.go:21: Elapsed 153ms 
+MAIN: 2020/09/22 19:52:36 main.go:24: Successfully stop
+logger: 2020/09/22 19:59:05 logger.go:106: Start
+MAIN: 2020/09/22 19:59:05 main.go:18: Start 
+MAIN: 2020/09/22 19:59:05 scrapper.go:20: Start scrapping
+MAIN: 2020/09/22 19:59:05 scrapper.go:50: get result
+MAIN: 2020/09/22 19:59:05 main.go:19: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0196 s - Total 0.0208 s
+MAIN: 2020/09/22 19:59:05 main.go:21: Elapsed 134ms 
+MAIN: 2020/09/22 19:59:05 main.go:24: Successfully stop
+logger: 2020/09/22 20:06:50 logger.go:106: Start
+MAIN: 2020/09/22 20:06:50 main.go:18: Start 
+MAIN: 2020/09/22 20:06:50 scrapper.go:20: Start scrapping
+MAIN: 2020/09/22 20:06:50 scrapper.go:50: get result
+MAIN: 2020/09/22 20:06:50 main.go:19: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0183 s - Total 0.0195 s
+MAIN: 2020/09/22 20:06:50 main.go:21: Elapsed 144ms 
+MAIN: 2020/09/22 20:06:50 main.go:24: Successfully stop
+logger: 2020/09/22 20:06:51 logger.go:106: Start
+MAIN: 2020/09/22 20:06:51 main.go:18: Start 
+MAIN: 2020/09/22 20:06:51 scrapper.go:20: Start scrapping
+MAIN: 2020/09/22 20:06:51 scrapper.go:50: get result
+MAIN: 2020/09/22 20:06:51 main.go:19: Review 0: MODx DB 0.0010 s - Queries 7 - App 0.0172 s - Total 0.0182 s
+MAIN: 2020/09/22 20:06:51 main.go:21: Elapsed 140ms 
+MAIN: 2020/09/22 20:06:51 main.go:24: Successfully stop
+logger: 2020/09/22 20:06:52 logger.go:106: Start
+MAIN: 2020/09/22 20:06:52 main.go:18: Start 
+MAIN: 2020/09/22 20:06:52 scrapper.go:20: Start scrapping
+MAIN: 2020/09/22 20:06:52 scrapper.go:50: get result
+MAIN: 2020/09/22 20:06:52 main.go:19: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0191 s - Total 0.0202 s
+MAIN: 2020/09/22 20:06:52 main.go:21: Elapsed 131ms 
+MAIN: 2020/09/22 20:06:52 main.go:24: Successfully stop
+logger: 2020/09/22 20:06:53 logger.go:106: Start
+MAIN: 2020/09/22 20:06:53 main.go:18: Start 
+MAIN: 2020/09/22 20:06:53 scrapper.go:20: Start scrapping
+MAIN: 2020/09/22 20:06:53 scrapper.go:50: get result
+MAIN: 2020/09/22 20:06:53 main.go:19: Review 0: MODx DB 0.0013 s - Queries 7 - App 0.0186 s - Total 0.0199 s
+MAIN: 2020/09/22 20:06:53 main.go:21: Elapsed 130ms 
+MAIN: 2020/09/22 20:06:53 main.go:24: Successfully stop
+logger: 2020/09/22 20:08:02 logger.go:106: Start
+main: 2020/09/22 20:08:02 main.go:18: Start 
+scrapper: 2020/09/22 20:08:02 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:08:03 scrapper.go:50: get result
+main: 2020/09/22 20:08:03 main.go:19: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0202 s - Total 0.0214 s
+main: 2020/09/22 20:08:03 main.go:21: Elapsed 149ms 
+main: 2020/09/22 20:08:03 main.go:24: Successfully stop
+logger: 2020/09/22 20:20:30 logger.go:106: Start
+main: 2020/09/22 20:20:30 main.go:19: Start 
+scrapper: 2020/09/22 20:20:30 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:20:48 scrapper.go:50: get result
+main: 2020/09/22 20:20:48 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0187 s - Total 0.0198 s
+main: 2020/09/22 20:20:48 main.go:22: Elapsed 17964ms 
+nagios: 2020/09/22 20:20:53 nagiosclient.go:34: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:43 logger.go:106: Start
+main: 2020/09/22 20:29:43 main.go:19: Start 
+scrapper: 2020/09/22 20:29:43 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:43 scrapper.go:50: get result
+main: 2020/09/22 20:29:43 main.go:21: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0199 s - Total 0.0211 s
+main: 2020/09/22 20:29:43 main.go:22: Elapsed 139ms 
+nagios: 2020/09/22 20:29:43 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:48 logger.go:106: Start
+main: 2020/09/22 20:29:48 main.go:19: Start 
+scrapper: 2020/09/22 20:29:48 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:49 scrapper.go:50: get result
+main: 2020/09/22 20:29:49 main.go:21: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0197 s - Total 0.0209 s
+main: 2020/09/22 20:29:49 main.go:22: Elapsed 135ms 
+nagios: 2020/09/22 20:29:49 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:49 logger.go:106: Start
+main: 2020/09/22 20:29:49 main.go:19: Start 
+scrapper: 2020/09/22 20:29:49 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:49 scrapper.go:50: get result
+main: 2020/09/22 20:29:49 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0188 s - Total 0.0198 s
+main: 2020/09/22 20:29:49 main.go:22: Elapsed 135ms 
+nagios: 2020/09/22 20:29:49 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:50 logger.go:106: Start
+main: 2020/09/22 20:29:50 main.go:19: Start 
+scrapper: 2020/09/22 20:29:50 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:50 scrapper.go:50: get result
+main: 2020/09/22 20:29:50 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0194 s - Total 0.0205 s
+main: 2020/09/22 20:29:50 main.go:22: Elapsed 126ms 
+nagios: 2020/09/22 20:29:50 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:50 logger.go:106: Start
+main: 2020/09/22 20:29:50 main.go:19: Start 
+scrapper: 2020/09/22 20:29:50 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:50 scrapper.go:50: get result
+main: 2020/09/22 20:29:50 main.go:21: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0208 s - Total 0.0220 s
+main: 2020/09/22 20:29:50 main.go:22: Elapsed 130ms 
+nagios: 2020/09/22 20:29:50 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:50 logger.go:106: Start
+main: 2020/09/22 20:29:50 main.go:19: Start 
+scrapper: 2020/09/22 20:29:50 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:50 scrapper.go:50: get result
+main: 2020/09/22 20:29:50 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0186 s - Total 0.0198 s
+main: 2020/09/22 20:29:50 main.go:22: Elapsed 133ms 
+nagios: 2020/09/22 20:29:50 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:51 logger.go:106: Start
+main: 2020/09/22 20:29:51 main.go:19: Start 
+scrapper: 2020/09/22 20:29:51 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:51 scrapper.go:50: get result
+main: 2020/09/22 20:29:51 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0171 s - Total 0.0181 s
+main: 2020/09/22 20:29:51 main.go:22: Elapsed 117ms 
+nagios: 2020/09/22 20:29:51 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:51 logger.go:106: Start
+main: 2020/09/22 20:29:51 main.go:19: Start 
+scrapper: 2020/09/22 20:29:51 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:51 scrapper.go:50: get result
+main: 2020/09/22 20:29:51 main.go:21: Review 0: MODx DB 0.0012 s - Queries 7 - App 0.0177 s - Total 0.0189 s
+main: 2020/09/22 20:29:51 main.go:22: Elapsed 353ms 
+nagios: 2020/09/22 20:29:51 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:51 logger.go:106: Start
+main: 2020/09/22 20:29:51 main.go:19: Start 
+scrapper: 2020/09/22 20:29:51 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:51 scrapper.go:50: get result
+main: 2020/09/22 20:29:51 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0182 s - Total 0.0193 s
+main: 2020/09/22 20:29:51 main.go:22: Elapsed 128ms 
+nagios: 2020/09/22 20:29:51 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 20:29:52 logger.go:106: Start
+main: 2020/09/22 20:29:52 main.go:19: Start 
+scrapper: 2020/09/22 20:29:52 scrapper.go:20: Start scrapping
+scrapper: 2020/09/22 20:29:52 scrapper.go:50: get result
+main: 2020/09/22 20:29:52 main.go:21: Review 0: MODx DB 0.0011 s - Queries 7 - App 0.0179 s - Total 0.0190 s
+main: 2020/09/22 20:29:52 main.go:22: Elapsed 136ms 
+nagios: 2020/09/22 20:29:52 nagiosclient.go:37: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host

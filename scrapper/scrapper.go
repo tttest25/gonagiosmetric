@@ -6,29 +6,32 @@ import (
 	"net/http"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/tttest25/gonagiosmetric/logger"
 	//"encoding/json"
 )
 
 var (
 	// Logger variable for logging
-	Logger *log.Logger
+	l *log.Logger
 )
 
-func exampleScrape() string {
+// Scrape return data from http
+func Scrape() string {
+	l.Printf("Start scrapping")
 	// Request the HTML page.
 	res, err := http.Get("https://reception.gorodperm.ru/index.php?id=280")
 	if err != nil {
-		Logger.Fatal(err)
+		l.Fatal(err)
 	}
 	defer res.Body.Close()
 	if res.StatusCode != 200 {
-		Logger.Fatalf("status code error: %d %s", res.StatusCode, res.Status)
+		l.Fatalf("status code error: %d %s", res.StatusCode, res.Status)
 	}
 
 	// Load the HTML document
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
-		Logger.Fatal(err)
+		l.Fatal(err)
 	}
 
 	strMetric := ""
@@ -44,5 +47,11 @@ func exampleScrape() string {
 		strMetric = fmt.Sprintf("Review %d: MODx DB %s - Queries %s - App %s - Total %s\n", i, database, queries, application, total)
 
 	})
+	l.Printf("get result")
 	return strMetric
+}
+
+func init() {
+	l = logger.ReturnLogger("scrapper")
+
 }

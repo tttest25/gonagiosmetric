@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/tttest25/nagios_metric_host_bash/logger"
+	"github.com/tttest25/gonagiosmetric/logger"
+	"github.com/tttest25/gonagiosmetric/nagiosclient"
+	"github.com/tttest25/gonagiosmetric/scrapper"
 	//"encoding/json"
 )
 
@@ -14,12 +16,12 @@ var (
 
 func main() {
 	l := logger.ReturnLogger("main")
-	l.Printf("Start")
-
-	// strMetricOut := exampleScrape()
+	l.Printf("Start ")
+	strMetricOut := scrapper.Scrape()
+	l.Printf("%s", strMetricOut)
 	l.Printf("Elapsed %dms \n", logger.TimeElapsed()/1000)
-	// sendToNagios(strMetricOut)
+	nagiosclient.SendToNagios(strMetricOut)
 
-	l.Printf("Stop")
+	l.Printf("Successfully stop")
 
 }

@@ -1,4 +1,4 @@
-module gonagiosmetric
+module github.com/tttest25/nagios_metric_host_bash
 
 go 1.14
 

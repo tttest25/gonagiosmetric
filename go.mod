@@ -1,4 +1,4 @@
-module github.com/x/y
+module gonagiosmetric
 
 go 1.14
 

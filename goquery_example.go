@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"os"
 	"time"
@@ -23,6 +24,39 @@ var (
 	// log nage
 
 )
+
+// truncateFile copy file with skipping from head
+func truncateFile(src string, lim int) {
+	fin, err := os.Open(src)
+	if err != nil {
+		panic(err)
+	}
+	defer fin.Close()
+
+	fout, err := os.Create(src + "tmp")
+	if err != nil {
+		panic(err)
+	}
+	defer fout.Close()
+
+	// Offset is the number of bytes you want to exclude
+	_, err = fin.Seek(int64(lim), io.SeekStart)
+	if err != nil {
+		panic(err)
+	}
+
+	n, err := io.Copy(fout, fin)
+	fmt.Printf("Copied %d bytes, err: %v", n, err)
+
+	if err := os.Remove(src); err != nil {
+		panic(err)
+	}
+
+	if err := os.Rename(src+"tmp", src); err != nil {
+		panic(err)
+	}
+
+}
 
 // fileExists checks if a file exists and is not a directory before we
 // try using it to prevent further errors.
@@ -103,11 +137,11 @@ func main() {
 	// get the size
 	size := fi.Size()
 
-	if fileExists(logFilename) && size > 200 {
-		err := os.Truncate(logFilename, 100)
-		if err != nil {
-			log.Fatal(err)
-		}
+	if fileExists(logFilename) && size > 4000 {
+		truncateFile(logFilename, 2000)
+		// if err != nil {
+		// 	log.Fatal(err)
+		// }
 	}
 
 	start := time.Now()

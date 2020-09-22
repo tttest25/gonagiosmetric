@@ -47,3 +47,11 @@ MAIN: 2020/09/22 10:45:42 goquery_example.go:93: Post "http://10.59.20.16:8000":
 MAIN: 2020/09/22 10:45:42 goquery_example.go:157: Start
 MAIN: 2020/09/22 10:45:42 goquery_example.go:160: Elapsed 125ms 
 MAIN: 2020/09/22 10:45:43 goquery_example.go:93: Post "http://10.59.20.16:8000": dial tcp 10.59.20.16:8000: connect: no route to host
+logger: 2020/09/22 12:58:15 logger.go:106: Start
+MAIN: 2020/09/22 12:58:15 main.go:17: Start
+MAIN: 2020/09/22 12:58:15 main.go:20: Elapsed 0ms 
+MAIN: 2020/09/22 12:58:15 main.go:23: Stop
+logger: 2020/09/22 12:58:19 logger.go:106: Start
+MAIN: 2020/09/22 12:58:19 main.go:17: Start
+MAIN: 2020/09/22 12:58:19 main.go:20: Elapsed 0ms 
+MAIN: 2020/09/22 12:58:19 main.go:23: Stop

@@ -79,10 +79,24 @@ func TimeTrack(start time.Time) int64 {
 	return elapsed.Nanoseconds() / 1000
 }
 
+func check(e error) {
+	if e != nil {
+		panic(e)
+	}
+}
+
 func init() {
+
+	if !fileExists(logFilename) {
+		f, err := os.Create(logFilename)
+		check(err)
+		f.Close()
+	}
+
 	fi, err := os.Stat(logFilename)
 	if err != nil {
 		log.Fatal(err)
+		check(err)
 	}
 	// get the size
 	size := fi.Size()

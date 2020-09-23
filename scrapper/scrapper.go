@@ -10,13 +10,30 @@ import (
 	//"encoding/json"
 )
 
+// Metric - type for saved data for metrics out
+type Metric struct {
+	database    string
+	queries     string
+	application string
+	total       string
+}
+
 var (
 	// Logger variable for logging
-	l *log.Logger
+	l  *log.Logger
+	pa *Metric // pa == nil
+
 )
+
+func (m *Metric) String() string {
+	return fmt.Sprintf("Metric  MODx DB %s - Queries %s - App %s - Total %s\n", m.database, m.queries, m.application, m.total)
+}
 
 // Scrape return data from http
 func Scrape() string {
+
+	pa = new(Metric)
+
 	l.Printf("Start scrapping")
 	// Request the HTML page.
 	res, err := http.Get("https://reception.gorodperm.ru/index.php?id=280")
@@ -34,7 +51,7 @@ func Scrape() string {
 		l.Fatal(err)
 	}
 
-	strMetric := ""
+	// strMetric := ""
 	// Find the review items
 	doc.Find("#stat").Each(func(i int, s *goquery.Selection) {
 		// For each item found, get the band and title
@@ -44,11 +61,16 @@ func Scrape() string {
 		application, _ := s.Attr("data-application")
 		total, _ := s.Attr("data-total")
 
-		strMetric = fmt.Sprintf("Review %d: MODx DB %s - Queries %s - App %s - Total %s\n", i, database, queries, application, total)
+		pa.database = database
+		pa.queries = queries
+		pa.application = application
+		pa.total = total
+
+		// strMetric = fmt.Sprintf("Review %d: MODx DB %s - Queries %s - App %s - Total %s\n", i, database, queries, application, total)
 
 	})
 	l.Printf("get result")
-	return strMetric
+	return pa.String() //strMetric
 }
 
 func init() {

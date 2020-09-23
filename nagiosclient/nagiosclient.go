@@ -15,6 +15,7 @@ var (
 	l *log.Logger
 )
 
+// SendToNagios - send http post to passive nagios server
 func SendToNagios(str string) {
 	form := url.Values{
 		"perfdata": {"fed-serv;check_MISOJ_reception;0;OK - " + str},

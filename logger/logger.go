@@ -117,7 +117,7 @@ func init() {
 	Logger = log.New(file, "logger: ", log.Ldate|log.Ltime|log.Lshortfile)
 	Logger.SetOutput(file)
 
-	Logger.Printf("Start")
+	Logger.Printf("Init")
 }
 
 func ReturnLogger(nameLogger string) *log.Logger {

@@ -36,8 +36,8 @@ func main() {
 
 	nagiosclient.Ns.NagiosAddService("db", metric.Database, "f", "s", 0.02, 0.5, -1, -1)
 	nagiosclient.Ns.NagiosAddService("Queries", metric.Queries, "i", "", 9, 11, -1, -1)
-	nagiosclient.Ns.NagiosAddService("App", metric.Application, "f", "s", 0.02, 0.5, -1, -1)
-	nagiosclient.Ns.NagiosAddService("Total", metric.Total, "f", "s", 0.02, 0.5, -1, -1)
+	nagiosclient.Ns.NagiosAddService("App", metric.Application, "f", "s", 0.3, 0.5, -1, -1)
+	nagiosclient.Ns.NagiosAddService("Total", metric.Total, "f", "s", 0.3, 0.5, -1, -1)
 
 	nagiosclient.Ns.NagiosAddPerformance(
 		nagiosclient.NagiosPerfData("chan1", metric.Metrics[0], "s", 0.5, 1, -1, -1),

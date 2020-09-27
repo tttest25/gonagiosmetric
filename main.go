@@ -32,6 +32,11 @@ func main() {
 	nagiosclient.Ns.NagiosSetServiceName("check_MISOJ_reception")
 
 	nagiosclient.Ns.NagiosAddParam(fmt.Sprintf("cur_chan: %d ", metric.Channel), 0)
+
+	nagiosclient.Ns.NagiosAddPerformance(
+		nagiosclient.NagiosPerfDataI("curChan", float64(metric.Channel), "", 5, 6, -1, -1),
+	)
+
 	nagiosclient.Ns.NagiosAddParam(fmt.Sprintf("src: %s ", metric.Source), 0)
 
 	nagiosclient.Ns.NagiosAddService("db", metric.Database, "f", "s", 0.02, 0.5, -1, -1)
@@ -39,12 +44,8 @@ func main() {
 	nagiosclient.Ns.NagiosAddService("App", metric.Application, "f", "s", 0.3, 0.5, -1, -1)
 	nagiosclient.Ns.NagiosAddService("Total", metric.Total, "f", "s", 0.3, 0.5, -1, -1)
 
-	nagiosclient.Ns.NagiosAddPerformance(
-		nagiosclient.NagiosPerfData("chan1", metric.Metrics[0], "s", 0.5, 1, -1, -1),
-	)
-	nagiosclient.Ns.NagiosAddPerformance(
-		nagiosclient.NagiosPerfData("chan2", metric.Metrics[1], "s", 0.5, 1, -1, -1),
-	)
+	nagiosclient.Ns.NagiosAddService("chan1", metric.Metrics[0], "f", "s", 0.5, 1, -1, -1)
+	nagiosclient.Ns.NagiosAddService("chan2", metric.Metrics[1], "f", "s", 0.5, 1, -1, -1)
 
 	//&scrapper.Metric{Database:0.013000000035390258, Queries:8, Application:0.21800000220537186,
 	//	Total:0.23099999874830246, Metrics:[]float64{0.12487, 0.132427},

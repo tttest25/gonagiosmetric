@@ -141,7 +141,7 @@ func NagiosService(value string) string {
 // NagiosGetTresh Get status by treshold
 func NagiosGetTresh(v float64, w float64, c float64) int {
 	status := 3
-	if v > c {
+	if v > c || v < 0 {
 		status = 2
 	} else if v > w {
 		status = 1

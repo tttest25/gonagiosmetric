@@ -95,10 +95,10 @@ func Scrape() *Metric {
 		userip, _ := s.Attr("data-userip")
 		proto, _ := s.Attr("data-proto")
 		//l.Printf("Float 64 database: %f", stringToFloat(database))
-		pa.Database = stringToFloat(database) * 10
+		pa.Database = stringToFloat(database)
 		pa.Queries = stringToFloat(queries)
-		pa.Application = stringToFloat(application) * 10
-		pa.Total = stringToFloat(total) * 10
+		pa.Application = stringToFloat(application)
+		pa.Total = stringToFloat(total)
 		pa.Source = source
 		pa.Channel = stringToInt(channel)
 		pa.Userip = userip
@@ -161,6 +161,28 @@ func scrapeMeasureChannel(url string, c chan int64) {
 		return
 	}
 	defer res.Body.Close()
+
+	// Load the HTML document
+	doc, err := goquery.NewDocumentFromReader(res.Body)
+	if err != nil {
+		l.Println(err)
+		c <- -1
+		return
+	}
+	// flag := false
+	sel := doc.Find("#stat")
+	// for _ = range sel.Nodes {
+	// 	flag = true
+	// 	// use `single` as a selection of 1 node
+	// }
+	// //	not right page
+	if sel.Nodes == nil {
+		c <- -1
+		return
+	}
+
+	l.Printf("status code error: %#v ", doc)
+
 	if res.StatusCode != 200 {
 		l.Printf("status code error: %d %s", res.StatusCode, res.Status)
 		c <- -1
